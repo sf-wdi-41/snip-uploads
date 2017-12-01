@@ -1,0 +1,11 @@
+<h1>Upload!</h1>
+
+<%= render 'upload_form' %>
+
+<ul>
+  <% for document in @documents %>
+      <li><%= link_to document.name, download_path(document) %></li>
+  <% end %>
+
+</ul>
+

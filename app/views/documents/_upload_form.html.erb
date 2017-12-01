@@ -1,0 +1,5 @@
+<%= form_with scope: :uploads, url: uploads_path do |f| %>
+    <%= f.text_field :name, placeholder: 'Optional File Name' %>
+    <%= f.file_field :file %>
+    <%= f.submit %>
+<% end %>
